@@ -1,4 +1,4 @@
-# python-api-challenge
+# Python API Challenge - How Does the Weather Change as we Approach the Equator?
 CWRU Data Analysis Bootcamp - HW 6 Python APIs
 
 ## Objective
