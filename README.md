@@ -1,6 +1,9 @@
 # python-api-challenge
 CWRU Data Analysis Bootcamp - HW 6 Python APIs
 
+## Objective
+Create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator, utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
+
 ## Contents
 * WeatherPy/
   * WeatherPy.ipynb - Jupyter Notebook that created a randomized list of cities. Utilizes the OpenWeatherMap API to search for each city and stores various weather statistics about each city. Some relationships between the statistics are graphed and linear regression models are made to examine the strength of the relationships.
