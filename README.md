@@ -2,6 +2,7 @@
 CWRU Data Analysis Bootcamp - HW 6 Python APIs
 
 ## Objective
+  ### Part 1 - WeatherPy
 * Create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator, utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
 
 * Build a series of scatter plots to showcase the following relationships:
@@ -11,7 +12,7 @@ CWRU Data Analysis Bootcamp - HW 6 Python APIs
   * Cloudiness (%) vs. Latitude
   * Wind Speed (mph) vs. Latitude
 
- Analyze each plot and explain the results.
+   Analyze each plot and explain the results.
  
 * Run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
@@ -24,7 +25,13 @@ CWRU Data Analysis Bootcamp - HW 6 Python APIs
   * Northern Hemisphere - Wind Speed (mph) vs. Latitude
   * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
- Analyze each plot and explain the relationships.
+   Analyze each plot and explain the relationships.
+ 
+ ### Part 2 - VacationPy
+ * Create a heat map that displays the humidity for every city from the part 1.
+ * Narrow down the DataFrame to find your ideal weather condition. 
+ * Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
+ * Plot the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country.
 
 ## Contents
 * WeatherPy/
@@ -34,12 +41,14 @@ CWRU Data Analysis Bootcamp - HW 6 Python APIs
     * 12 PNGs of graphs analyzing various relations of latitude and weather statistics
 * VacationPy/
   * VacationPy.ipynb - Jupyter Notebook that reads the city data created from WeatherPy and plots them using gmaps. It searches through certain criteria to find the most desirable areas to take a vacation based on the data and uses the Google Places API to find hotels near the filtered cities. The hotels are then plotted using gmaps.
-  * Cities Heatmap Full.png - Full world map of all of the cities found in WeatherPy plotted with gmaps using heatmap.
+  * Cities Heatmap Full.png - Full world map of all of the cities found in WeatherPy plotted with gmaps using heatmap plugin, displaying a relative humidity level for all of the cities.
   ![heatmap](/VacationPy/Cities%20Heatmap%20Full.PNG)
   * Hotel Heatmap Popup.png - Example of the place marker function in gmaps showcasing a hotel nearby a city that fit desirable vacation conditions, displaying hotel name, city, and county in the popup. Other hotels are marked in blue along the map
   ![hotelmap](/VacationPy/Hotel%20Heatmap%20Popup.png)
   --------------------------------------------
  ## Analysis
+ 
+ Chart analysis located in WeatherPy.ipynb
  
  ### Cities Pulled
 
